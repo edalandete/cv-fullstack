@@ -9,11 +9,11 @@ export default function loadCurriculum() {
       const { data } = await axios(url);
       dispatch({
         type: actionTypes.LOAD_CURRICULUM,
-        curriculum: data[0],
+        curriculum: data[0]
       });
     } catch (error) {
       dispatch({
-        type: actionTypes.LOAD_CURRICULUM_ERROR,
+        type: actionTypes.LOAD_CURRICULUM_ERROR
       });
     }
   };

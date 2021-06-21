@@ -31,10 +31,10 @@ function Header({ dispatch, curriculum }) {
 Header.propTypes = {
   curriculum: PropTypes.shape({
     personalData: PropTypes.shape({
-      name: PropTypes.string.isRequired,
-    }).isRequired,
+      name: PropTypes.string.isRequired
+    }).isRequired
   }).isRequired,
-  dispatch: PropTypes.func.isRequired,
+  dispatch: PropTypes.func.isRequired
 };
 
 const mapStateToProps = ({ curriculum }) => ({ curriculum });
