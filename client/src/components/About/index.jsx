@@ -24,10 +24,10 @@ About.propTypes = {
   curriculum: PropTypes.shape({
     personalData: PropTypes.shape({
       name: PropTypes.string.isRequired,
-      description: PropTypes.string.isRequired,
-    }).isRequired,
+      description: PropTypes.string.isRequired
+    }).isRequired
   }).isRequired,
-  dispatch: PropTypes.func.isRequired,
+  dispatch: PropTypes.func.isRequired
 };
 
 const mapStateToProps = ({ curriculum }) => ({ curriculum });

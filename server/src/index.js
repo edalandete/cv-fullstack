@@ -11,7 +11,7 @@ try {
   mongoose.connect(
     process.env.DDBB_URL,
     { useNewUrlParser: true, useUnifiedTopology: true },
-    () => debug(' Mongoose is connected'),
+    () => debug(' Mongoose is connected')
   );
 } catch (e) {
   debug('could not connect');

@@ -2,7 +2,7 @@ import { combineReducers } from 'redux';
 import curriculum from './curriculumReducer';
 
 const rootReducer = combineReducers({
-  curriculum,
+  curriculum
 });
 
 export default rootReducer;

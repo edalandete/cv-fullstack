@@ -5,7 +5,7 @@ import rootReducer from '../reducers/index';
 const composeEnhancer = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;
 
 const configureStore = (initialState) => createStore(
-  rootReducer, initialState, composeEnhancer(applyMiddleware(thunk)),
+  rootReducer, initialState, composeEnhancer(applyMiddleware(thunk))
 );
 
 export default configureStore;

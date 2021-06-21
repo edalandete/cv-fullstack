@@ -36,13 +36,13 @@ Education.propTypes = {
         official: PropTypes.arrayOf(
           PropTypes.shape({
 
-          }).isRequired,
+          }).isRequired
         ),
-        languages: PropTypes.shape({}).isRequired,
-      }).isRequired,
-    ),
+        languages: PropTypes.shape({}).isRequired
+      }).isRequired
+    )
   }).isRequired,
-  dispatch: PropTypes.func.isRequired,
+  dispatch: PropTypes.func.isRequired
 };
 
 const mapStateToProps = ({ curriculum }) => ({ curriculum });
