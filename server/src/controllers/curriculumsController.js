@@ -29,7 +29,7 @@ function curriculumsControler() {
 
   return {
     getAll,
-    createOne,
+    createOne
   };
 }
 

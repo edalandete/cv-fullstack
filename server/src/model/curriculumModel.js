@@ -12,8 +12,8 @@ const curriculumSchema = mongoose.Schema({
     socialMedia: [{
       name: String,
       image: String,
-      url: String,
-    }],
+      url: String
+    }]
   },
 
   workExperience: [{
@@ -21,7 +21,8 @@ const curriculumSchema = mongoose.Schema({
     startDate: Date,
     finishDate: Date,
     isActual: Boolean,
-    jobDescription: String,
+    role: String,
+    description: String
   }],
 
   studies: {
@@ -30,23 +31,23 @@ const curriculumSchema = mongoose.Schema({
       startDate: Date,
       finishDate: Date,
       title: String,
-      description: String,
+      description: String
     }],
     languages: [{
       name: String,
       level: String,
-      certification: String,
-    }],
+      certification: String
+    }]
   },
 
   stack: [{
     name: String,
-    svg: String,
+    svg: String
   }],
 
   certifications: [{
-    name: String,
-  }],
+    name: String
+  }]
 
 });
 

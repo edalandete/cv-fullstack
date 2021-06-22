@@ -20,7 +20,7 @@ function Education({ dispatch, curriculum: { studies } }) {
           <li className="list__study-item" key={study._id}>
             <h3 className="study-item__title">{study.school}</h3>
             <p>
-              <span className="dates">{dayjs('2019-01-25').format('YYYY')}</span>
+              <span className="dates">{dayjs(study.finishDate).format('YYYY')}</span>
               {'  -  '}
               {study.title}
             </p>
